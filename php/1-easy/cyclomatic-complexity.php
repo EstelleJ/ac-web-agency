@@ -57,3 +57,15 @@ function convertSize($bytes, $precision = 2) {
   
   return $bytes . ' B';
 }
+
+// Reviews
+/*
+  Maintenabilité et lisibilité :
+	Créer une fonction récursive, qui prendre en paramètre la taille du fichier, la précision,
+	et une valeur i incrémentée de 1 à chaque appel de fonction.
+	La valeur de i, permettra de sélectionner la taille correspondante, depuis un tableau définit en amont de la fonction.
+
+	function convertSize($fileSize, $precision = 2, $i = 1){
+
+	}
+*/
