@@ -8,6 +8,25 @@
   text-shadow: 0.55rem 0.55rem #15FFF5;
 }
 
+// Reviews
+/*
+  Lisibilité : Préférer utiliser l'indentation de SASS,
+  qui permets une meilleure lisibilité des éléments et une rapidité de code appréciable
+
+  #footer {
+    .cgv__footer {
+      margin: 0.5rem;
+      text-shadow: 0.55rem 0.55rem #15FFF5;
+
+      .button {
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+*/
+
 #footer .cgv__footer {
   margin: 0.5rem;
   text-shadow: 0.55rem 0.55rem #15FFF5;
@@ -19,7 +38,23 @@
   font-size: 1.5rem;
 }
 
+// Reviews
+/*
+  Maintenabilité : Préférer utiliser les mixins et les variables proposées par les préprocesseurs,
+  plutôt que d'indiquer les couleurs avec leurs codes hexadecimaux
+
+  Créer une mixin qui permet d'éviter de duppliquer le code suivant :
+  margin: 0.5rem;
+  text-shadow: 0.55rem 0.55rem #15FFF5;
+
+  De plus, ajouter l'utilisation d'une variable pour la couleur : #15FFF5
+
+  Les mixins et les variables seront importées depuis des fichiers scss séparés
+*/
+
 #footer .cgu__footer {
   margin: 0.5rem;
   text-shadow: 0.55rem 0.55rem #15FFF5;
 }
+
+
