@@ -8,6 +8,13 @@ namespace App;
 
 class Customer
 {
+		// Reviews
+		/*
+		 * Bonnes pratiques : Typer les données passées en paramètres, et les données de retour.
+		 * + définir les propriétés en amont des méthodes
+		 */
+
+
     public function __construct(String $name)
     {
         $this->name = $name;
@@ -28,6 +35,13 @@ class Customer
         $frequentRenterPoints = 0;
         $result = "Rental Record for " . $this->getName() . "\n";
 
+				// Reviews
+	      /*
+	       * Lisibilité et maintenabilité : mettre cette partie ci-dessous dans une autre méthode
+	       * + Ajouter des commentaires
+	       *
+	       * Bonnes pratiques : Pour les tests unitaires, utiliser des valeurs de retour
+	       */
         foreach ($this->rentals as $each){
            $thisAmount = 0.0;
 
