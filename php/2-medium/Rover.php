@@ -16,6 +16,13 @@ class Rover
         $this->y = $y;
         $this->x = $x;
     }
+		// Reviews
+		/*
+		 * Lisibilité : ajouter des commentaires pour expliquer ce à quoi sert le code.
+		 * L'utilisation de noms de variables clairs et précis est recommandé.
+		 *
+		 * Bonnes pratiques : Pour les tests unitaires, utiliser des valeurs de retour
+		 */
 
     public function receive(string $commandsSequence): void
     {
@@ -23,7 +30,18 @@ class Rover
         for ($i = 0; $i < $commandsSequenceLenght; ++$i) {
             $command = substr($commandsSequence, $i, 1);
             if ($command === "l" || $command === "r") {
-                // Rotate Rover
+
+								// Reviews
+	              /*
+	               * Lisibilité et maintenabilité : Faire un refactoring du code pour éviter les répétitions
+	               * Bonnes pratiques : utiliser des méthodes séparées pour optimiser les tests
+	               * + éviter l'imbrication de if et else multiples
+	               * + utiliser des noms de fonctions explicites sur le retour attendu
+	               *
+	               * Maintenabilité : gérer les cas d'erreurs
+	               *
+	               */
+								// Rotate Rover
                 if ($this->direction === "N") {
                     if ($command === "r") {
                         $this->direction = "E";
